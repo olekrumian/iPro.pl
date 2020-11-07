@@ -1,0 +1,10 @@
+.container {
+  max-width: 1646px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@import "normal";
+@import "header";
+@import "intro";
+@import "device";

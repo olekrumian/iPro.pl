@@ -1,0 +1,36 @@
+.device {
+
+  &_item {
+    text-align: center;
+    margin: 0px 100px 0px 0px;
+
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+
+    img {
+      margin: 0px 0px 20px 0px;
+    }
+
+    p {
+      color: #000000;
+    }
+
+    &:hover p {
+      text-decoration: underline;
+    }
+  }
+
+  &__title {
+    margin: 150px 0px 100px 0px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 52px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

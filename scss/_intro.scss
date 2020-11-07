@@ -1,0 +1,50 @@
+.intro {
+  margin: 55px 0px 0px 0px;
+  background: url('../img/intro-min.png')center center no-repeat;
+  width: 100%;
+  height: 850px;
+  color: #ffffff;
+
+  &__wrapper {
+    max-width: 690px;
+    margin: auto;
+    text-align: center;
+  }
+
+  &__title {
+    padding: 216px 0px 0px 0px;
+    display: block;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 79px;
+  }
+
+  &__subtitle {
+    margin: 18px 0px 0px 0px;
+    display: block;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 52px;
+  }
+
+  &__btn {
+    margin: 50px auto 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 55px;
+    color: #ffffff;
+    background-color: #157DFB;
+    border-radius: 10px;
+  }
+
+  &__link {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    text-decoration-line: underline;
+    color: #157DFB;
+  }
+}
