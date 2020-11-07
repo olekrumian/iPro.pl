@@ -1,0 +1,52 @@
+.footer {
+  padding: 138px 0px;
+  background: #E0E0E0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: start;
+
+  }
+
+  &__card-link {
+    margin: 0px 146px 0px 0px;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  &__card-link-item {
+    display: block;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+    color: #000000;
+    margin: 0px 0px 24px 0px;
+
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+  &__card-naprawa {}
+
+  &__card-addres {
+    display: block;
+    margin-left: auto;
+  }
+
+  &__card-phone {
+    color: #000000;
+  }
+
+  &__statusnaprawy {
+    display: block;
+    margin: 44px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: #157DFB;
+  }
+}

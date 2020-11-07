@@ -120,7 +120,7 @@ p {
 
 .intro {
   margin: 55px 0px 0px 0px;
-  background: url("../img/intro-min.png") center center no-repeat;
+  background: #BDBDBD url("../img/intro-min.png") center center no-repeat;
   width: 100%;
   height: 850px;
   color: #ffffff;
@@ -218,4 +218,61 @@ p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer {
+  padding: 138px 0px;
+  background: #E0E0E0;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.footer__card-link {
+  margin: 0px 146px 0px 0px;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.footer__card-link-item {
+  display: block;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0px 0px 24px 0px;
+}
+
+.footer__card-link-item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.footer__card-addres {
+  display: block;
+  margin-left: auto;
+}
+
+.footer__card-phone {
+  color: #000000;
+}
+
+.footer__statusnaprawy {
+  display: block;
+  margin: 44px 0px 0px 0px;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 26px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #157DFB;
 }
