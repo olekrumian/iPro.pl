@@ -23,6 +23,10 @@
   pointer-events: all;
 }
 
+.pr {
+  position: relative;
+}
+
 @import "normal";
 @import "header";
 @import "intro";
@@ -34,3 +38,5 @@
 @import "footer";
 @import "modal";
 @import "scroll";
+@import "naprawaiphone";
+@import "kosztnaprawy";

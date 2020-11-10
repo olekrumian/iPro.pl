@@ -1,0 +1,53 @@
+.naprawa {
+
+  &__iphone {
+    background-color: #F4F4F4;
+  }
+
+  &__iphone-title {
+    display: block;
+    padding: 54px 0px 54px 0px;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  &__iphone-wrapper {
+    display: flex;
+    justify-content: start;
+  }
+
+  &__iphone-card {
+    margin: 0px 90px 0px 0px;
+
+    ul li {
+      display: flex;
+      align-items: center;
+      margin: 0px 0px 26px 0px;
+
+      &:last-child {
+        margin: 0px 0px 82px 0px;
+      }
+
+      svg {
+        margin: 0px 12px 0px 0px;
+      }
+
+      a {
+        color: #157DFB;
+      }
+    }
+
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+  &__iphone-image {
+    position: absolute;
+    height: 90%;
+    right: 0;
+    overflow: hidden;
+    bottom: 0;
+  }
+}

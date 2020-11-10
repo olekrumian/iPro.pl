@@ -1,0 +1,61 @@
+.koszt {
+
+  &__naprawy {}
+
+  &__naprawy-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  &__naprawy-title {
+    margin: 100px 0px 12px 0px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  &__naprawy-subtitle {
+    margin: 0px 0px 50px 0px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+
+  &__naprawy-suptittle {
+    padding: 58px 0px 22px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    border-bottom: 1px solid #C4C4C4;
+    ;
+  }
+
+  &__naprawy-table {
+    width: 1140px;
+
+    tbody {
+      tr {
+        td {
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  &__naprawy-table-title {
+    padding: 32px 0px 12px 0px;
+  }
+
+  &__naprawy-table-subtitle {
+    padding: 0px 0px 42px 0px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+}
