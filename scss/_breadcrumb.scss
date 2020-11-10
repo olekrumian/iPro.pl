@@ -1,0 +1,21 @@
+.breadcrumb {
+  padding: 56px 0px 0px 0px;
+  border-bottom: 0.5px solid #C4C4C4;
+
+  &__wrapper {
+    height: 56px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &__link {
+    margin: 0px 0px 0px 35px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #606060;
+  }
+
+  &__name {}
+}

@@ -1,0 +1,135 @@
+.modal {
+
+  &__covid {
+    display: none;
+
+    &-link {
+      cursor: pointer;
+    }
+  }
+
+  &__covid-active {
+    display: block;
+    position: fixed;
+    width: 470px;
+    height: 370px;
+    left: calc(50% - 470px/2 - 1.5px);
+    top: calc(50% - 370px/2 - 10px);
+    background: #FFFFFF;
+    border-radius: 30px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__covid-image {
+    margin: 0px 0px 32px 0px;
+    width: 34px;
+    height: 44px;
+  }
+
+  &__covid-title {
+    margin: 0px 0px 12px 0px;
+  }
+
+  &__covid-desctiption {
+    text-align: center;
+    max-width: 343px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.modal {
+
+  &__about {
+    display: none;
+
+    &-link {
+      cursor: pointer;
+    }
+  }
+
+  &__about-active {
+    display: block;
+    position: fixed;
+    width: 470px;
+    height: 370px;
+    left: calc(50% - 470px/2 - 1.5px);
+    bottom: calc(50% - 370px/2 - 10px);
+    background: #FFFFFF;
+    border-radius: 30px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__close {}
+
+  &__about-image {
+    margin: 0px 0px 32px 0px;
+    width: 60px;
+    height: 44px;
+  }
+
+  &__about-title {
+    margin: 0px 0px 12px 0px;
+  }
+
+  &__about-desctiption {
+    text-align: center;
+    max-width: 343px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.modal {
+
+  &__feedback {
+    display: none;
+  }
+
+  &__feedback-active {
+    display: block;
+    position: fixed;
+    width: 470px;
+    height: 370px;
+    left: calc(50% - 470px/2 - 1.5px);
+    bottom: calc(50% - 370px/2 - 10px);
+    background: #FFFFFF;
+    border-radius: 30px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__close {}
+
+  &__feedback-image {
+
+    svg {
+      margin: 0px 0px 32px 0px;
+    }
+  }
+
+  &__feedback-title {
+    margin: 0px 0px 12px 0px;
+  }
+
+  &__feedback-desctiption {
+    text-align: center;
+    max-width: 343px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -18,35 +18,69 @@
 
   &__card-link-item {
     display: block;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 26px;
     color: #000000;
-    margin: 0px 0px 24px 0px;
+    margin: 0px 0px 22px 0px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
 
     &:last-child {
       margin: 0px 0px 0px 0px;
     }
   }
 
-  &__card-naprawa {}
-
-  &__card-addres {
+  &__card-address {
     display: block;
     margin-left: auto;
+
+    address {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__card-pho {
+    display: inline-block;
+    font-weight: 300;
   }
 
   &__card-phone {
+    display: inline-block;
+    font-weight: 300;
     color: #000000;
+  }
+
+  &__card-czas {
+    font-weight: 300;
+  }
+
+  &__social-wrapper {
+    margin: 42px 0px 0px 0px;
+  }
+
+  &__social-link {
+    margin: 0px 24px 0px 0px;
+
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+  &__social-image {
+    width: 33px;
+    height: 33px;
   }
 
   &__statusnaprawy {
     display: block;
-    margin: 44px 0px 0px 0px;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 26px;
+    margin: 42px 0px 0px 0px;
     text-decoration-line: underline;
     color: #157DFB;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
   }
 }

@@ -1,9 +1,30 @@
 .intro {
-  margin: 55px 0px 0px 0px;
+  position: relative;
   background: #BDBDBD url('../img/intro-min.png')center center no-repeat;
   width: 100%;
   height: 850px;
   color: #ffffff;
+
+  &__covid {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    background: #157DFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__covid-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: underline;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
 
   &__wrapper {
     max-width: 690px;
@@ -12,23 +33,23 @@
   }
 
   &__title {
-    padding: 216px 0px 0px 0px;
+    padding: 217px 0px 0px 0px;
     display: block;
     font-weight: 500;
-    font-size: 58px;
-    line-height: 79px;
+    font-size: 55px;
+    line-height: 75px;
   }
 
   &__subtitle {
-    margin: 18px 0px 0px 0px;
+    margin: 11px 0px 0px 0px;
     display: block;
-    font-weight: normal;
-    font-size: 38px;
-    line-height: 52px;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 48px;
   }
 
   &__btn {
-    margin: 50px auto 25px auto;
+    margin: 42px auto 22px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,9 +61,6 @@
   }
 
   &__link {
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 26px;
     letter-spacing: -0.01em;
     text-decoration-line: underline;
     color: #157DFB;

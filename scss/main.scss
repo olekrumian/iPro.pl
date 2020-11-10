@@ -4,9 +4,33 @@
   margin: 0 auto;
 }
 
+.overlay {
+  display: block;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #333333;
+  transition: all .2s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay.active {
+  opacity: 0.8;
+  pointer-events: all;
+}
+
 @import "normal";
 @import "header";
 @import "intro";
+@import "breadcrumb";
+@import "naprawa";
 @import "device";
+@import "feedback";
 @import "map";
 @import "footer";
+@import "modal";
+@import "scroll";

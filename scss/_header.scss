@@ -1,9 +1,8 @@
 .header {
   width: 100%;
-  background-color: #000000;
+  background-color: #333333;
   position: fixed;
-  margin: -55px 0px 0px 0px;
-  z-index: 10;
+  z-index: 8;
 
   &__wrapper {
     display: flex;
@@ -12,10 +11,16 @@
     align-items: center;
   }
 
+  &__logo {
+    a {
+      img {
+        width: 58px;
+        height: 35px;
+      }
+    }
+  }
+
   &__nav-link {
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 26px;
     color: #ffffff;
     margin: 0px 50px 0px 0px;
 
@@ -26,9 +31,6 @@
   }
 
   &__phone-link {
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 26px;
     color: #ffffff;
   }
 }

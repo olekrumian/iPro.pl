@@ -1,0 +1,14 @@
+.scroll {
+  display: none;
+
+  svg {
+    height: 75px;
+    width: 75px;
+    bottom: 100px;
+    left: 47%;
+    left: calc(50% - 75px/2 - 1.5px);
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+  }
+}
