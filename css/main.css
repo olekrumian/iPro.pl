@@ -1038,8 +1038,11 @@ p {
 .koszt__naprawy-btn {
   display: block;
   margin: 58px 0px 0px 0px;
-  width: 148px;
+  width: 149px;
   height: 54px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
   color: #FFFFFF;
   background-color: #157DFB;
   -webkit-border-radius: 13px;
