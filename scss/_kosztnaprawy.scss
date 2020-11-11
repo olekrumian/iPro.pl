@@ -16,7 +16,7 @@
   }
 
   &__naprawy-subtitle {
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 82px 0px;
     text-align: center;
     font-weight: 300;
     font-size: 16px;
@@ -26,6 +26,7 @@
 
   &__naprawy-suptittle {
     padding: 58px 0px 22px 0px;
+    margin: 0px 0px 32px 0px;
     font-weight: normal;
     font-size: 24px;
     line-height: 33px;
@@ -39,6 +40,10 @@
     tbody {
       tr {
         td {
+          span {
+            color: #157DFB;
+          }
+
           &:last-child {
             text-align: right;
           }
@@ -48,7 +53,7 @@
   }
 
   &__naprawy-table-title {
-    padding: 32px 0px 12px 0px;
+    padding: 0px 0px 12px 0px;
   }
 
   &__naprawy-table-subtitle {
@@ -57,5 +62,105 @@
     font-size: 16px;
     line-height: 24px;
     color: #888888;
+
+    .cena__nieoryginal {
+      display: block;
+      padding: 12px 0px 0px 0px;
+    }
+
+    &-blue {
+      color: #157DFB;
+    }
   }
+
+  &__naprawy-description {
+    padding: 58px 0px 0px 0px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__naprawy-formtitle {
+    margin: 150px 0px 12px 0px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  &__naprawy-formsubtitle {
+    margin: 0px 0px 72px 0px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #888888;
+  }
+
+  &_naprawy-input {
+    margin: 0px 20px 18px 0px;
+    padding: 0px 0px 0px 15px;
+    width: 415px;
+    height: 56px;
+    border: 1px solid #C4C4C4;
+    border-radius: 13px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #888888;
+
+    &::placeholder {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #888888;
+    }
+  }
+
+  &__naprawy-textarea {
+    padding: 17px 0px 0px 15px;
+    width: 705px;
+    height: 204px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 13px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #888888;
+
+    &::placeholder {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #888888;
+    }
+  }
+
+  &__naprawy-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-one {
+      flex-basis: 38%;
+    }
+
+    &-two {
+      flex-basis: 60%;
+    }
+  }
+
+  &__naprawy-btn {
+    display: block;
+    margin: 58px 0px 0px 0px;
+    width: 148px;
+    height: 54px;
+    color: #FFFFFF;
+    background-color: #157DFB;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+
 }

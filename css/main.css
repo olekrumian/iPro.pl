@@ -305,6 +305,96 @@ p {
   color: #000000;
 }
 
+.naprawaipad {
+  margin: 100px 0px 0px 0px;
+  text-align: center;
+}
+
+.naprawaipad__card-wrapper {
+  max-width: 1204px;
+  margin: 82px auto 0px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 120px;
+  grid-row-gap: 94px;
+  -webkit-box-align: end;
+  -webkit-align-items: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.naprawaipad__title {
+  margin: 0px 0px 12px 0px;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.naprawaipad__subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #888888;
+}
+
+.naprawaipad_card:hover .naprawaipad__name {
+  text-decoration: underline;
+}
+
+.naprawaipad__name {
+  margin: 42px 0px 0px 0px;
+  color: #000000;
+}
+
+.naprawamacbook {
+  margin: 100px 0px 0px 0px;
+  text-align: center;
+}
+
+.naprawamacbook__card-wrapper {
+  max-width: 1200px;
+  margin: 82px auto 0px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 120px;
+  grid-row-gap: 94px;
+  -webkit-box-align: end;
+  -webkit-align-items: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.naprawamacbook__title {
+  margin: 0px 0px 12px 0px;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.naprawamacbook__subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #888888;
+}
+
+.naprawamacbook_card:hover .naprawamacbook__name {
+  text-decoration: underline;
+}
+
+.naprawamacbook__name {
+  margin: 42px 0px 0px 0px;
+  color: #000000;
+}
+
 .device_item {
   text-align: center;
   margin: 0px 100px 0px 0px;
@@ -692,6 +782,15 @@ p {
           justify-content: start;
 }
 
+.naprawa__iphone-description {
+  padding: 0px 0px 294px 0px;
+  max-width: 431px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
 .naprawa__iphone-card {
   margin: 0px 90px 0px 0px;
 }
@@ -732,6 +831,10 @@ p {
   bottom: 0;
 }
 
+.naprawa__iphone-padding_bottom {
+  padding: 50px 0px 12px 0px;
+}
+
 .koszt__naprawy-wrapper {
   max-width: 1140px;
   margin: 0 auto;
@@ -746,7 +849,7 @@ p {
 }
 
 .koszt__naprawy-subtitle {
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 82px 0px;
   text-align: center;
   font-weight: 300;
   font-size: 16px;
@@ -756,6 +859,7 @@ p {
 
 .koszt__naprawy-suptittle {
   padding: 58px 0px 22px 0px;
+  margin: 0px 0px 32px 0px;
   font-weight: normal;
   font-size: 24px;
   line-height: 33px;
@@ -766,12 +870,16 @@ p {
   width: 1140px;
 }
 
+.koszt__naprawy-table tbody tr td span {
+  color: #157DFB;
+}
+
 .koszt__naprawy-table tbody tr td:last-child {
   text-align: right;
 }
 
 .koszt__naprawy-table-title {
-  padding: 32px 0px 12px 0px;
+  padding: 0px 0px 12px 0px;
 }
 
 .koszt__naprawy-table-subtitle {
@@ -780,4 +888,161 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: #888888;
+}
+
+.koszt__naprawy-table-subtitle .cena__nieoryginal {
+  display: block;
+  padding: 12px 0px 0px 0px;
+}
+
+.koszt__naprawy-table-subtitle-blue {
+  color: #157DFB;
+}
+
+.koszt__naprawy-description {
+  padding: 58px 0px 0px 0px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.koszt__naprawy-formtitle {
+  margin: 150px 0px 12px 0px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.koszt__naprawy-formsubtitle {
+  margin: 0px 0px 72px 0px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt_naprawy-input {
+  margin: 0px 20px 18px 0px;
+  padding: 0px 0px 0px 15px;
+  width: 415px;
+  height: 56px;
+  border: 1px solid #C4C4C4;
+  -webkit-border-radius: 13px;
+          border-radius: 13px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt_naprawy-input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt_naprawy-input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt_naprawy-input::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt_naprawy-input::placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt__naprawy-textarea {
+  padding: 17px 0px 0px 15px;
+  width: 705px;
+  height: 204px;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 13px;
+          border-radius: 13px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt__naprawy-textarea::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt__naprawy-textarea:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt__naprawy-textarea::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt__naprawy-textarea::placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.koszt__naprawy-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.koszt__naprawy-form-one {
+  -webkit-flex-basis: 38%;
+      -ms-flex-preferred-size: 38%;
+          flex-basis: 38%;
+}
+
+.koszt__naprawy-form-two {
+  -webkit-flex-basis: 60%;
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+}
+
+.koszt__naprawy-btn {
+  display: block;
+  margin: 58px 0px 0px 0px;
+  width: 148px;
+  height: 54px;
+  color: #FFFFFF;
+  background-color: #157DFB;
+  -webkit-border-radius: 13px;
+          border-radius: 13px;
+  cursor: pointer;
 }
