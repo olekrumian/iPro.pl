@@ -23,6 +23,7 @@ const modalFeedback = document.querySelector('.modal__feedback');
 const btnOpen = document.querySelector('.intro__covid-link');
 const btnOpenM = document.querySelector('.modal__covid-linkm');
 const btnOpenCov = document.querySelector('.modal__covid-link');
+const btnOpenCovM = document.querySelector('.modal__covid-linkm');
 const btnOpenTwo = document.querySelector('.modal__about-link');
 const btnOpenTwoM = document.querySelector('.modal__about-linkm');
 const btnOpenFeedback = document.querySelector('.feedback__link');
@@ -55,6 +56,7 @@ const closeMenu = () => {
 btnOpen.addEventListener('click', openModal);
 btnOpenM.addEventListener('click', openModal);
 btnOpenCov.addEventListener('click', openModal);
+btnOpenCovM.addEventListener('click', openModal);
 btnOpenTwo.addEventListener('click', openModalTwo);
 btnOpenTwoM.addEventListener('click', openModalTwo);
 btnOpenFeedback.addEventListener('click', openModalFeedback);

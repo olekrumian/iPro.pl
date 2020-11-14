@@ -964,7 +964,7 @@ p {
 
 @media only screen and (max-width: 576px) {
   .footer {
-    padding: 52px 0px 149px;
+    padding: 0px 0px 149px;
     background: #E0E0E0;
   }
   .footer__wrapper {
