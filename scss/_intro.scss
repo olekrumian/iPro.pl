@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  background: #BDBDBD url('../img/intro-min.png')center center no-repeat;
+  background: #BDBDBD url('../img/intro-min1.png')center center no-repeat;
   width: 100%;
   height: 850px;
   color: #ffffff;
@@ -33,7 +33,7 @@
   }
 
   &__title {
-    padding: 217px 0px 0px 0px;
+    padding: 309px 0px 0px 0px;
     display: block;
     font-weight: 500;
     font-size: 55px;
@@ -64,5 +64,77 @@
     letter-spacing: -0.01em;
     text-decoration-line: underline;
     color: #157DFB;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .intro {
+    position: relative;
+    background: #000000 url('../img/intro-min1.png') center center no-repeat;
+    width: 100%;
+    height: 488px;
+    color: #ffffff;
+
+    &__covid {
+      position: absolute;
+      top: 56px;
+      left: 0;
+      width: 100%;
+      height: 56px;
+      background: #157DFB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__covid-link {
+      font-weight: normal;
+      text-decoration: underline;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+
+    &__wrapper {
+      max-width: 288px;
+      margin: auto;
+      text-align: center;
+    }
+
+    &__title {
+      padding: 165px 0px 0px 0px;
+      display: block;
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 40px;
+    }
+
+    &__subtitle {
+      margin: 11px 0px 0px 0px;
+      display: block;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    &__btn {
+      margin: 32px auto 22px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 142px;
+      height: 54px;
+      color: #ffffff;
+      background-color: #157DFB;
+      border-radius: 10px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__link {
+      letter-spacing: -0.01em;
+      text-decoration-line: underline;
+      color: #157DFB;
+    }
   }
 }

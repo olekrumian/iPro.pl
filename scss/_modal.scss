@@ -32,6 +32,9 @@
 
   &__covid-title {
     margin: 0px 0px 12px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   &__covid-desctiption {
@@ -57,7 +60,7 @@
     display: block;
     position: fixed;
     width: 470px;
-    height: 370px;
+    height: 458px;
     left: calc(50% - 470px/2 - 1.5px);
     bottom: calc(50% - 370px/2 - 10px);
     background: #FFFFFF;
@@ -69,8 +72,6 @@
     flex-direction: column;
   }
 
-  &__close {}
-
   &__about-image {
     margin: 0px 0px 32px 0px;
     width: 60px;
@@ -79,6 +80,9 @@
 
   &__about-title {
     margin: 0px 0px 12px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   &__about-desctiption {
@@ -112,8 +116,6 @@
     flex-direction: column;
   }
 
-  &__close {}
-
   &__feedback-image {
 
     svg {
@@ -123,6 +125,9 @@
 
   &__feedback-title {
     margin: 0px 0px 12px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   &__feedback-desctiption {

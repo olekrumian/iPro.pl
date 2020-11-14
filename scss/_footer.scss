@@ -42,15 +42,14 @@
     }
   }
 
-  &__card-pho {
-    display: inline-block;
-    font-weight: 300;
-  }
-
   &__card-phone {
     display: inline-block;
     font-weight: 300;
-    color: #000000;
+    color: #157DFB;
+
+    p {
+      text-decoration: underline;
+    }
   }
 
   &__card-czas {
@@ -82,5 +81,149 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .accordion {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    padding: 52px 0px 149px;
+    background: #E0E0E0;
+
+    &__wrapper {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+    }
+
+    &__card-link {
+      display: none;
+    }
+
+    &__card-naprawa {
+      display: none;
+    }
+
+    &__card-link-item {
+      display: block;
+      color: #000000;
+      margin: 0px 0px 22px 0px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+
+      &:last-child {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+
+    &__card-address {
+      margin: 52px 0px 0px 0px;
+      display: block;
+      text-align: center;
+
+      address {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &__card-phone {
+      display: inline-block;
+      font-weight: 300;
+      color: #157DFB;
+
+      p {
+        text-decoration: underline;
+      }
+    }
+
+    &__card-czas {
+      font-weight: 300;
+    }
+
+    &__social-wrapper {
+      margin: 42px 0px 0px 0px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__social-link {
+      margin: 0px 18px 0px 0px;
+
+      &:last-child {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+
+    &__social-image {
+      width: 33px;
+      height: 33px;
+    }
+
+    &__statusnaprawy {
+      display: block;
+      margin: 42px 0px 0px 0px;
+      text-decoration-line: underline;
+      color: #157DFB;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .accordion {
+      display: block;
+    }
+  }
+
+
+
+  .tab input,
+  .tab-content {
+    display: none;
+  }
+
+  .tab-title {
+    padding: 12px 0px 12px 0px;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    border-bottom: 0.5px solid #C4C4C4;
+  }
+
+  .tab-content a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .tab-title::after {
+    content: '›';
+    float: right;
+    margin: 0px 0px 0px 0px;
+    color: C4C4C4;
+  }
+
+  .tab-content {
+    padding: 12px 35px;
+  }
+
+  .tab :checked+.tab-title {}
+
+  .tab :checked+.tab-title::after {
+    content: '›';
+    transform: rotate(90deg);
+  }
+
+  .tab :checked~.tab-content {
+    display: block;
+    /* Показываем содержимое */
   }
 }

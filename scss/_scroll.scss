@@ -10,5 +10,27 @@
     cursor: pointer;
     position: fixed;
     z-index: 1;
+
+    line {
+      stroke: #C4C4C4;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .scroll {
+    display: none;
+
+    svg {
+      height: 55px;
+      width: 55px;
+      bottom: 52px;
+      left: 50%;
+      left: calc(50% - 50px/2 - 1.5px);
+      cursor: pointer;
+      position: fixed;
+      z-index: 1;
+
+    }
   }
 }

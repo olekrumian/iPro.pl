@@ -21,8 +21,10 @@ const modal = document.querySelector('.modal__covid');
 const modalAbout = document.querySelector('.modal__about');
 const modalFeedback = document.querySelector('.modal__feedback');
 const btnOpen = document.querySelector('.intro__covid-link');
+const btnOpenM = document.querySelector('.modal__covid-linkm');
 const btnOpenCov = document.querySelector('.modal__covid-link');
 const btnOpenTwo = document.querySelector('.modal__about-link');
+const btnOpenTwoM = document.querySelector('.modal__about-linkm');
 const btnOpenFeedback = document.querySelector('.feedback__link');
 const btnClose = document.querySelector('.modal__close');
 
@@ -51,8 +53,10 @@ const closeMenu = () => {
   overlay.classList.remove('active')
 };
 btnOpen.addEventListener('click', openModal);
+btnOpenM.addEventListener('click', openModal);
 btnOpenCov.addEventListener('click', openModal);
 btnOpenTwo.addEventListener('click', openModalTwo);
+btnOpenTwoM.addEventListener('click', openModalTwo);
 btnOpenFeedback.addEventListener('click', openModalFeedback);
 btnClose.addEventListener('click', closeMenu);
 overlay.addEventListener('click', closeMenu);
@@ -62,3 +66,30 @@ document.addEventListener('keydown', (event) => {
       closeMenu();
     };
   });
+
+
+function burgerMenu(selector) {
+    let menu = $(selector);
+    let button = menu.find(".burger__menu-button");
+    let link = menu.find(".burger__menu-link");
+
+    button.on("click", (e) => {
+        e.preventDefault();
+        toggleMenu();
+    });
+
+    link.on("click", () => toggleMenu());
+    overlay.on("click", () => toggleMenu());
+
+    function toggleMenu() {
+        menu.toggleClass("burger__menu-active");
+
+        if (menu.hasClass("burger__menu-active")) {
+            $("body").css("overflow", "hidden");
+        } else {
+            $("body").css("overflow", "visible");
+        }
+    }
+}
+
+burgerMenu(".burger__menu");

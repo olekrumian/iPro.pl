@@ -21,6 +21,9 @@
 
   &__title {
     margin: 0px 0px 12px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   &__description {
@@ -39,5 +42,55 @@
     text-decoration: underline;
     color: #157DFB;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .feedback {
+
+    &_card {
+      text-align: center;
+      max-width: 398px;
+      margin: 0px 0px 82px 0px;
+
+      &:last-child {
+        margin: 0px 0px 100px 0px;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    svg {
+      margin: 0px 0px 32px 0px;
+    }
+
+    &__title {
+      margin: 0px 0px 12px 0px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__description {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__link {
+      display: block;
+      text-align: center;
+      margin: 32px 0px 0px 0px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      text-decoration: underline;
+      color: #157DFB;
+      cursor: pointer;
+    }
   }
 }

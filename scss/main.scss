@@ -27,6 +27,30 @@
   position: relative;
 }
 
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .map {
+    iframe {
+      height: 455px !important;
+    }
+  }
+}
+
 
 @import "normal";
 @import "header";
