@@ -70,28 +70,13 @@ document.addEventListener('keydown', (event) => {
   });
 
 
-function burgerMenu(selector) {
-    let menu = $(selector);
-    let button = menu.find(".burger__menu-button");
-    let link = menu.find(".burger__menu-link");
+const burgerMenuButton = document.querySelector('.burger__menu-button');
+const burgerMenuButtonActive = document.querySelector('.burger__menu-lines');
 
-    button.on("click", (e) => {
-        e.preventDefault();
-        toggleMenu();
-    });
+const openBurger = () => {
+  burgerMenuButton.classList.toggle('burger__menu-active');
+};
+const closeBurger = () => {
+};
+burgerMenuButton.addEventListener('click', openBurger);
 
-    link.on("click", () => toggleMenu());
-    overlay.on("click", () => toggleMenu());
-
-    function toggleMenu() {
-        menu.toggleClass("burger__menu-active");
-
-        if (menu.hasClass("burger__menu-active")) {
-            $("body").css("overflow", "hidden");
-        } else {
-            $("body").css("overflow", "visible");
-        }
-    }
-}
-
-burgerMenu(".burger__menu");

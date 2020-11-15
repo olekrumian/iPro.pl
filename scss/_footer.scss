@@ -215,8 +215,6 @@
     padding: 12px 35px;
   }
 
-  .tab :checked+.tab-title {}
-
   .tab :checked+.tab-title::after {
     content: '›';
     transform: rotate(90deg);

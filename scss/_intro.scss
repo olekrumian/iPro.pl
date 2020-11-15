@@ -70,7 +70,9 @@
 @media only screen and (max-width: 576px) {
   .intro {
     position: relative;
-    background: #000000 url('../img/intro-min1.png') center center no-repeat;
+    background: #000000 url('../img/intro-min.png');
+    background-position: center center;
+    background-size: cover;
     width: 100%;
     height: 488px;
     color: #ffffff;

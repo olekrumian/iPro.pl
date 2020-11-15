@@ -54,10 +54,15 @@
 
   &__iphone-image {
     position: absolute;
-    height: 90%;
+    height: 88%;
     right: 0;
     overflow: hidden;
     bottom: 0;
+    text-align: right;
+
+    img {
+      width: 88%;
+    }
   }
 
   &__iphone-padding_bottom {
