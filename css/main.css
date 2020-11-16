@@ -220,7 +220,7 @@ input[type='submit'] {
   .header .burger-menu__button {
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 5%;
     z-index: 5;
     width: 27px;
     height: 21px;
