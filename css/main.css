@@ -124,6 +124,12 @@ p {
   margin: 0;
 }
 
+input[type='submit'] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .header {
   width: 100%;
   background-color: #333333;

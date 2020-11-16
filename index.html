@@ -251,12 +251,12 @@
   </footer><!-- /.footer -->
   <!-- Modal windows -->
   <div class="modal__aplikuj">
-    <div class="modal__close"></div>
+    <div class="modal__closea"></div>
     <div class="modal__header">
       <h3 class="modal__aplikuj-title">Żądanie naprawy</h3>
       <p class="modal__aplikuj-desctiption">Oddzwonimy w ciągu dnia</p>
     </div>
-    <form id="iform" action="send.php" method="post" class="modal__form">
+    <form id="iform" action="send.php" class="modal__form">
       <input name="nameone" class="modal__aplikuj-input" type="text" placeholder="Twoje imię">
       <input name="teleph" class="modal__aplikuj-input" type="tel" placeholder="Numer kontaktowy">
       <input type="submit" value="Wysłać" class="modal__aplikuj-btn">
@@ -331,6 +331,7 @@
   </div>
   <!-- /.scroll -->
   <script src="js/main.js" defer></script>
+  <script src="js/aplikuj.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
@@ -361,36 +362,25 @@
 
     burgerMenu(".burger-menu");
   </script>
-  <script>
-    // modal
-    const modalAplikuj = document.querySelector('.modal__aplikuj');
-    const btnOpenAplikuj = document.querySelector('.intro__btn');
-    const btnClose = document.querySelector('.modal__close');
-
-    // overlay
-    const overlay = document.createElement('div')
-    overlay.classList.add('overlay');
-    document.body.insertAdjacentElement("beforeend", overlay);
-    // openModal
-    const openModalAplikuj = () => {
-      modalAplikuj.classList.add('modal__aplikuj-active');
-      overlay.classList.add('active')
-    };
-    // closeModal
-    const closeMenu = () => {
-      modalAplikuj.classList.remove('modal__aplikuj-active');
-      overlay.classList.remove('active')
-    };
-    btnOpenAplikuj.addEventListener('click', openModalAplikuj);
-    btnClose.addEventListener('click', closeMenu);
-    overlay.addEventListener('click', closeMenu);
-
-    document.addEventListener('keydown', (event) => {
-      if (event.code === 'Escape') {
-        closeMenu();
-      };
-    });
-  </script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("#iform").submit(function (e) { // Устанавливаем событие отправки для формы с id=form
+         e.preventDefault();
+          var form_data = $(this).serialize(); // Собираем все данные из формы
+          $.ajax({
+              type: "POST", // Метод отправки
+              url: "send.php", // Путь до php файла отправителя
+              data: form_data,
+              success: function () {
+                  // Код в этом блоке выполняется при успешной отправке сообщения
+                  $('.active').removeClass();
+                  $('.modal__aplikuj-active').removeClass();
+                  alert("Wysłano");
+              }
+          });
+      });
+  });   
+</script>
 </body>
 
 </html>
