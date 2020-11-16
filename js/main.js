@@ -20,7 +20,6 @@ scrooll.addEventListener('click', () => {
 const modal = document.querySelector('.modal__covid');
 const modalAbout = document.querySelector('.modal__about');
 const modalFeedback = document.querySelector('.modal__feedback');
-const modalAplikuj = document.querySelector('.modal__aplikuj');
 const btnOpen = document.querySelector('.intro__covid-link');
 const btnOpenM = document.querySelector('.modal__covid-linkm');
 const btnOpenCov = document.querySelector('.modal__covid-link');
@@ -28,7 +27,6 @@ const btnOpenCovM = document.querySelector('.modal__covid-linkm');
 const btnOpenTwo = document.querySelector('.modal__about-link');
 const btnOpenTwoM = document.querySelector('.modal__about-linkm');
 const btnOpenFeedback = document.querySelector('.feedback__link');
-const btnOpenAplikuj= document.querySelector('.intro__btn');
 const btnClose = document.querySelector('.modal__close');
 
 // overlay
@@ -48,16 +46,11 @@ const openModalFeedback = () => {
   modalFeedback.classList.add('modal__feedback-active');
   overlay.classList.add('active')
 };
-const openModalAplikuj= () => {
-  modalAplikuj.classList.add('modal__aplikuj-active');
-  overlay.classList.add('active')
-};
 // closeModal
 const closeMenu = () => {
   modal.classList.remove('modal__covid-active');
   modalAbout.classList.remove('modal__about-active');
   modalFeedback.classList.remove('modal__feedback-active');
-  modalAplikuj.classList.remove('modal__aplikuj-active');
   overlay.classList.remove('active')
 };
 btnOpen.addEventListener('click', openModal);
@@ -67,7 +60,6 @@ btnOpenCovM.addEventListener('click', openModal);
 btnOpenTwo.addEventListener('click', openModalTwo);
 btnOpenTwoM.addEventListener('click', openModalTwo);
 btnOpenFeedback.addEventListener('click', openModalFeedback);
-btnOpenAplikuj.addEventListener('click', openModalAplikuj);
 btnClose.addEventListener('click', closeMenu);
 overlay.addEventListener('click', closeMenu);
 
