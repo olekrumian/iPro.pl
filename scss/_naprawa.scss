@@ -7,7 +7,7 @@
     margin: 82px auto 0px auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 150px;
     grid-row-gap: 102px;
     align-items: end;
@@ -42,7 +42,7 @@
 
 @media only screen and (max-width: 576px) {
   .naprawa {
-    margin: 32px 0px 0px 0px;
+    margin: 88px 0px 0px 0px;
     text-align: center;
 
     &__card-wrapper {
@@ -87,7 +87,7 @@
 
 @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
   .naprawa {
-    margin: 32px 0px 0px 0px;
+    margin: 88px 0px 0px 0px;
     text-align: center;
 
     &__card-wrapper {

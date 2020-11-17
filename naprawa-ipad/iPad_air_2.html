@@ -247,7 +247,7 @@
 
     <section class="koszt__naprawy">
       <h2 class="koszt__naprawy-title">Koszt naprawy telefonu iPhone 11 Pro Max</h2>
-      <p class="koszt__naprawy-subtitle">Cena w kolorze niebieskim - za część oryginalną. Cena w kolorze czarnym - za kopię wysokiej jakości. </p>
+      <p class="koszt__naprawy-subtitle">Cena w kolorze niebieskim - za część oryginalną. Cena w kolorze czarnym - za kopię wysokiej jakości.</p>
       <div class="koszt__naprawy-wrapper">
         <table class="koszt__naprawy-table">
           <tbody>
@@ -304,7 +304,7 @@
             ładowania i testowania wszystkich funkcji urządzenia.</p>
           <p>Części zamienne do naprawy są już wliczone w koszt pracy.</p>
         </div>
-        <h3 class="koszt__naprawy-formtitle">Żądanie naprawy</h3>
+        <h3 class="koszt__naprawy-formtitle">Zgloś naprawy</h3>
         <p class="koszt__naprawy-formsubtitle">Części zamienne do naprawy są już wliczone w koszt pracy</p>
         <form id="iform" action="" class="koszt__naprawy-form">
           <div class="koszt__naprawy-form-one">
@@ -413,6 +413,7 @@
           <a class="footer__card-link-item footer__card-phone" href="tel:+48889999347">
             <p class="footer__card-pho">Telefon: +48 88 9999 347</p>
           </a>
+          <a href="mailto:info@ipro.pl" class="footer__card-link-item footer__card-phone"><p>info@ipro.pl</p></a>
           <address class="footer__card-link-item">Adres: aleja Solidarności 117 lok. 102 Warszawa 00-140</address>
           <p class="footer__card-link-item footer__card-czas">Godziny otwarcia: Pn — Pt 9:00 — 18:00 / Sob 9:00-15:00
           </p>
@@ -474,6 +475,21 @@
     </div>
   </footer><!-- /.footer -->
   <!-- Modal windows -->
+  <div class="modal__dla-firm">
+    <div class="modal__close"></div>
+    <div class="modal__header">
+      <h3 class="modal__dla-firm-title">Zgloś naprawy</h3>
+      <p class="modal__dla-firm-desctiption">Oddzwonimy w ciągu dnia</p>
+    </div>
+    <form id="dlaFirmForm" action="send.php" class="modal__form-firm">
+      <input name="nazwaFirmy" class="modal__dla-firm-input" type="text" placeholder="Nazwa firmy">
+      <input name="nip" class="modal__dla-firm-input" type="tel" placeholder="NIP">
+      <input name="numer" class="modal__dla-firm-input" type="tel" placeholder="Numer kontaktowy">
+      <input name="email" class="modal__dla-firm-input" type="email" placeholder="Email">
+      <input type="submit" value="Wysłać" class="modal__dla-firm-btn">
+    </form>
+  </div>
+  <!-- /.modal__dla-fifm -->
   <div class="modal__covid">
     <div class="modal__close"></div>
     <div class="modal__feedback-image">
@@ -562,6 +578,53 @@
         });
       });
     });
+  </script>
+   <script>
+    function burgerMenu(selector) {
+      let menu = $(selector);
+      let button = menu.find(".burger-menu__button");
+      let link = menu.find(".burger-link");
+      let overlay = menu.find(".burger-menu__overlay");
+
+      button.on("click", (e) => {
+        e.preventDefault();
+        toggleMenu();
+      });
+
+      link.on("click", () => toggleMenu());
+      overlay.on("click", () => toggleMenu());
+
+      function toggleMenu() {
+        menu.toggleClass("burger-menu__active");
+
+        if (menu.hasClass("burger-menu__active")) {
+          $("body").css("overflow", "hidden");
+        } else {
+          $("body").css("overflow", "visible");
+        }
+      }
+    }
+
+    burgerMenu(".burger-menu");
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#dlaFirmForm").submit(function (e) { // Устанавливаем событие отправки для формы с id=form
+           e.preventDefault();
+            var form_data = $(this).serialize(); // Собираем все данные из формы
+            $.ajax({
+                type: "POST", // Метод отправки
+                url: "senddlafirm.php", // Путь до php файла отправителя
+                data: form_data,
+                success: function () {
+                    // Код в этом блоке выполняется при успешной отправке сообщения
+                    $('.active').removeClass();
+                    $('.modal__dla-firm-active').removeClass();
+                    alert("Wysłano");
+                }
+            });
+        });
+    });   
   </script>
 </body>
 

@@ -174,3 +174,190 @@
   }
 
 }
+
+@media only screen and (max-width: 576px) {
+  .koszt {
+
+    &__naprawy {}
+
+    &__naprawy-wrapper {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    &__naprawy-title {
+      margin: 52px 0px 12px 0px;
+      text-align: center;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    &__naprawy-subtitle {
+      margin: 0px 0px 82px 0px;
+      text-align: center;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #157DFB;
+    }
+
+    &__naprawy-suptittle {
+      padding: 42px 0px 12px 0px;
+      margin: 0px auto 22px auto;
+      width: 90%;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      border-bottom: 1px solid #C4C4C4;
+      ;
+    }
+
+    &__naprawy-table {
+      margin: 0 auto;
+      width: 90%;
+
+      tbody {
+        tr {
+          td {
+            vertical-align: top;
+
+            span {
+              color: #157DFB;
+            }
+
+            &:last-child {
+              width: 26%;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    &__naprawy-table-title {
+      padding: 0px 0px 6px 0px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__naprawy-table-subtitle {
+      padding: 0px 0px 32px 0px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      color: #888888;
+
+      &-blue {
+        color: #157DFB;
+      }
+    }
+
+    &__naprawy-description {
+      padding: 42px 0px 0px 0px;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #888888;
+
+      p {
+        &:first-child {
+          margin: 0px 0px 12px 0px;
+        }
+      }
+    }
+
+    &__naprawy-formtitle {
+      margin: 100px 0px 12px 0px;
+      text-align: center;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    &__naprawy-formsubtitle {
+      margin: 0px 0px 0px 0px;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #888888;
+    }
+
+    &_naprawy-input {
+      margin: 0px 0px 10px 0px;
+      padding: 0px 0px 0px 15px;
+      width: 290px;
+      height: 48px;
+      border: 1px solid #C4C4C4;
+      border-radius: 13px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #888888;
+
+      &::placeholder {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #888888;
+      }
+    }
+
+    &__naprawy-textarea {
+      padding: 17px 0px 0px 15px;
+      width: 290px;
+      height: 150px;
+      border: 1px solid #C4C4C4;
+      box-sizing: border-box;
+      border-radius: 13px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #888888;
+
+      &::placeholder {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #888888;
+      }
+    }
+
+    &__naprawy-form {
+      margin: 32px auto 0px auto;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      &-one {
+        flex-basis: 90%;
+      }
+
+      &-two {
+        flex-basis: 90%;
+      }
+    }
+
+    &__naprawy-btn {
+      display: block;
+      margin: 32px auto 0px auto;
+      width: 149px;
+      height: 54px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
+      background-color: #157DFB;
+      border-radius: 13px;
+      cursor: pointer;
+    }
+
+  }
+}

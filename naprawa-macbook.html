@@ -186,6 +186,7 @@
         <div class="footer__card-address">
           <a class="footer__card-link-item footer__card-phone"
             href="tel:+48889999347"><p class="footer__card-pho">Telefon: +48 88 9999 347</p></a>
+            <a href="mailto:info@ipro.pl" class="footer__card-link-item footer__card-phone"><p>info@ipro.pl</p></a>
           <address class="footer__card-link-item">Adres: aleja Solidarności 117 lok. 102 Warszawa 00-140</address>
           <p class="footer__card-link-item footer__card-czas">Godziny otwarcia: Pn — Pt 9:00 — 18:00 / Sob 9:00-15:00</p>
           <div class="footer__social-wrapper">
@@ -246,6 +247,37 @@
     </div>
   </footer><!-- /.footer -->
   <!-- Modal windows -->
+  <div class="modal__dla-firm">
+    <div class="modal__close"></div>
+    <div class="modal__header">
+      <h3 class="modal__dla-firm-title">Zgloś naprawy</h3>
+      <p class="modal__dla-firm-desctiption">Oddzwonimy w ciągu dnia</p>
+    </div>
+    <form id="dlaFirmForm" action="send.php" class="modal__form-firm">
+      <input name="nazwaFirmy" class="modal__dla-firm-input" type="text" placeholder="Nazwa firmy">
+      <input name="nip" class="modal__dla-firm-input" type="tel" placeholder="NIP">
+      <input name="numer" class="modal__dla-firm-input" type="tel" placeholder="Numer kontaktowy">
+      <input name="email" class="modal__dla-firm-input" type="email" placeholder="Email">
+      <input type="submit" value="Wysłać" class="modal__dla-firm-btn">
+    </form>
+  </div>
+  <!-- /.modal__dla-fifm -->
+    <div class="modal__covid">
+      <div class="modal__close"></div>
+      <div class="modal__feedback-image">
+        <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M18.8 25.6928C22.5555 25.6928 25.6 22.6621 25.6 18.9235C25.6 15.185 22.5555 12.1543 18.8 12.1543C15.0445 12.1543 12 15.185 12 18.9235C12 22.6621 15.0445 25.6928 18.8 25.6928Z"
+            stroke="#157DFB" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M36 18.9231C36 34.1538 19 46 19 46C19 46 2 34.1538 2 18.9231C2 14.4348 3.79107 10.1303 6.97918 6.95665C10.1673 3.78296 14.4913 2 19 2C23.5087 2 27.8327 3.78296 31.0208 6.95665C34.2089 10.1303 36 14.4348 36 18.9231V18.9231Z"
+            stroke="#157DFB" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <h3 class="modal__covid-title">Serwis mobilny</h3>
+      <p class="modal__covid-desctiption">Serwisant przyjeżdża w dogodnym dla Ciebie czasie i naprawia urządzenie w 15-30
+        minut. Pracujemy na terenie całej Warszawy i okolic.</p>
+    </div>
   <div class="modal__covid">
     <div class="modal__close"></div>
     <div class="modal__feedback-image">
@@ -310,6 +342,54 @@
   </div>
   <!-- /.scroll -->
   <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    function burgerMenu(selector) {
+      let menu = $(selector);
+      let button = menu.find(".burger-menu__button");
+      let link = menu.find(".burger-link");
+      let overlay = menu.find(".burger-menu__overlay");
+
+      button.on("click", (e) => {
+        e.preventDefault();
+        toggleMenu();
+      });
+
+      link.on("click", () => toggleMenu());
+      overlay.on("click", () => toggleMenu());
+
+      function toggleMenu() {
+        menu.toggleClass("burger-menu__active");
+
+        if (menu.hasClass("burger-menu__active")) {
+          $("body").css("overflow", "hidden");
+        } else {
+          $("body").css("overflow", "visible");
+        }
+      }
+    }
+
+    burgerMenu(".burger-menu");
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#dlaFirmForm").submit(function (e) { // Устанавливаем событие отправки для формы с id=form
+           e.preventDefault();
+            var form_data = $(this).serialize(); // Собираем все данные из формы
+            $.ajax({
+                type: "POST", // Метод отправки
+                url: "senddlafirm.php", // Путь до php файла отправителя
+                data: form_data,
+                success: function () {
+                    // Код в этом блоке выполняется при успешной отправке сообщения
+                    $('.active').removeClass();
+                    $('.modal__dla-firm-active').removeClass();
+                    alert("Wysłano");
+                }
+            });
+        });
+    });   
+  </script>
 </body>
 
 </html>
