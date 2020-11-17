@@ -326,6 +326,21 @@
     </div>
   </footer><!-- /.footer -->
   <!-- Modal windows -->
+  <div class="modal__dla-firm">
+    <div class="modal__close"></div>
+    <div class="modal__header">
+      <h3 class="modal__dla-firm-title">Zgloś naprawy</h3>
+      <p class="modal__dla-firm-desctiption">Oddzwonimy w ciągu dnia</p>
+    </div>
+    <form id="dlaFirmForm" action="send.php" class="modal__form-firm">
+      <input name="nazwaFirmy" class="modal__dla-firm-input" type="text" placeholder="Nazwa firmy">
+      <input name="nip" class="modal__dla-firm-input" type="tel" placeholder="NIP">
+      <input name="numer" class="modal__dla-firm-input" type="tel" placeholder="Numer kontaktowy">
+      <input name="email" class="modal__dla-firm-input" type="email" placeholder="Email">
+      <input type="submit" value="Wysłać" class="modal__dla-firm-btn">
+    </form>
+  </div>
+  <!-- /.modal__dla-fifm -->
   <div class="modal__covid">
     <div class="modal__close"></div>
     <div class="modal__feedback-image">
@@ -419,6 +434,25 @@
     }
 
     burgerMenu(".burger-menu");
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#dlaFirmForm").submit(function (e) { // Устанавливаем событие отправки для формы с id=form
+           e.preventDefault();
+            var form_data = $(this).serialize(); // Собираем все данные из формы
+            $.ajax({
+                type: "POST", // Метод отправки
+                url: "senddlafirm.php", // Путь до php файла отправителя
+                data: form_data,
+                success: function () {
+                    // Код в этом блоке выполняется при успешной отправке сообщения
+                    $('.active').removeClass();
+                    $('.modal__dla-firm-active').removeClass();
+                    alert("Wysłano");
+                }
+            });
+        });
+    });   
   </script>
 </body>
 
