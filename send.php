@@ -1,5 +1,5 @@
 <?
-        $to = "hello@dkolosov.com";
+        $to = "info@ipro.pl";
         $subject = 'Naprawa'; //Заголовок сообщения
         $message = '
                 <html>

@@ -169,6 +169,7 @@ input[type='submit'] {
 .header__nav-link {
   color: #ffffff;
   margin: 0px 50px 0px 0px;
+  cursor: pointer;
 }
 
 .header__nav-link:last-child {
