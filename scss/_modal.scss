@@ -221,13 +221,18 @@
   }
 
   &__aplikuj-btn {
-    margin: 32px auto 0px;
+    margin: 32px auto 50px;
     width: 149px;
     height: 54px;
     color: #FFFFFF;
     background: #157DFB;
     border-radius: 13px;
     cursor: pointer;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
   }
 
 }
@@ -319,6 +324,11 @@
     background: #157DFB;
     border-radius: 13px;
     cursor: pointer;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -546,13 +556,18 @@
     }
 
     &__aplikuj-btn {
-      margin: 32px auto 0px;
+      margin: 32px auto 30px;
       width: 149px;
       height: 54px;
       color: #FFFFFF;
       background: #157DFB;
       border-radius: 13px;
       cursor: pointer;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
     }
 
   }
@@ -644,6 +659,11 @@
       background: #157DFB;
       border-radius: 13px;
       cursor: pointer;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
     }
   }
 }
