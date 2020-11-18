@@ -30,6 +30,11 @@
   position: relative;
 }
 
+.disabled img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 @media only screen and (max-width: 1440px) {
   .container {
     max-width: 1240px;
@@ -637,7 +642,7 @@ input[type='submit'] {
     text-align: center;
   }
   .naprawa__card-wrapper {
-    max-width: 290px;
+    max-width: 90%;
     width: 100%;
     margin: 42px auto 0px auto;
     display: -ms-grid;
@@ -674,6 +679,7 @@ input[type='submit'] {
   }
 }
 
+/* iPhone X */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .naprawa {
     margin: 88px 0px 0px 0px;
@@ -717,6 +723,297 @@ input[type='submit'] {
   .naprawa__name {
     margin: 22px 0px 0px 0px;
     color: #000000;
+  }
+}
+
+/* iPhone 11/12 and iPhone 11/12 Pro */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .naprawa {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawa__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[10];
+        grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawa__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawa__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawa_card:hover .naprawa__name {
+    text-decoration: none;
+  }
+  .naprawa__img {
+    width: 100%;
+  }
+  .naprawa__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+/* iPhone 11 */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .naprawa {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawa__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[10];
+        grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawa__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawa__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawa_card:hover .naprawa__name {
+    text-decoration: none;
+  }
+  .naprawa__img {
+    width: 100%;
+  }
+  .naprawa__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+/* iPhone 11 Pro Max */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .naprawa {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawa__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[10];
+        grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawa__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawa__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawa_card:hover .naprawa__name {
+    text-decoration: none;
+  }
+  .naprawa__img {
+    width: 100%;
+  }
+  .naprawa__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+.naprawa__iphone {
+  background-color: #F4F4F4;
+}
+
+.naprawa__iphone-title {
+  display: block;
+  padding: 54px 0px 54px 0px;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.naprawa__iphone-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.naprawa__iphone-description {
+  padding: 0px 0px 294px 0px;
+  max-width: 431px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #888888;
+}
+
+.naprawa__iphone-card {
+  margin: 0px 90px 0px 0px;
+}
+
+.naprawa__iphone-card ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 18px 0px;
+}
+
+.naprawa__iphone-card ul li:last-child {
+  margin: 0px 0px 82px 0px;
+}
+
+.naprawa__iphone-card ul li svg {
+  margin: 0px 12px 0px 0px;
+}
+
+.naprawa__iphone-card ul li a {
+  color: #157DFB;
+}
+
+.naprawa__iphone-card:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.naprawa__iphone-image {
+  position: absolute;
+  height: 88%;
+  right: 0;
+  overflow: hidden;
+  bottom: 0;
+  text-align: right;
+}
+
+.naprawa__iphone-image img {
+  width: 88%;
+}
+
+.naprawa__iphone-padding_bottom {
+  padding: 50px 0px 12px 0px;
+}
+
+@media only screen and (max-width: 576px) {
+  .naprawa__iphone {
+    margin: 56px 0px 0px 0px;
+    background-color: #F4F4F4;
+  }
+  .naprawa__iphone-title {
+    padding: 32px 0px 46px 0px;
+    text-align: center;
+    display: block;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .naprawa__iphone-wrapper {
+    padding: 0px 0px 24px 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .naprawa__iphone-description {
+    padding: 0px 0px 50px 0px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #888888;
+  }
+  .naprawa__iphone-card {
+    margin: 0px 0px 0px 0px;
+  }
+  .naprawa__iphone-card ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px 0px 18px 0px;
+  }
+  .naprawa__iphone-card ul li:last-child {
+    margin: 0px 0px 18px 0px;
+  }
+  .naprawa__iphone-card ul li svg {
+    margin: 0px 12px 0px 0px;
+  }
+  .naprawa__iphone-card ul li a {
+    color: #157DFB;
+  }
+  .naprawa__iphone-card:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+  .naprawa__iphone-image {
+    display: none;
+  }
+  .naprawa__iphone-padding_bottom {
+    padding: 50px 0px 12px 0px;
   }
 }
 
@@ -765,6 +1062,237 @@ input[type='submit'] {
   color: #000000;
 }
 
+@media only screen and (max-width: 576px) {
+  .naprawaipad {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawaipad__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[9];
+        grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawaipad__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawaipad__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawaipad_card:hover .naprawaipad__name {
+    text-decoration: none;
+  }
+  .naprawaipad__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .naprawaipad {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawaipad__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawaipad__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawaipad__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawaipad_card:hover .naprawaipad__name {
+    text-decoration: none;
+  }
+  .naprawaipad__img {
+    width: 100%;
+  }
+  .naprawaipad__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+/* iPhone 12 and iPhone 12 Pro */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .naprawaipad {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawaipad__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawaipad__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawaipad__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawaipad_card:hover .naprawaipad__name {
+    text-decoration: none;
+  }
+  .naprawaipad__img {
+    width: 100%;
+  }
+  .naprawaipad__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+/* iPhone 11 */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .naprawaipad {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawaipad__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawaipad__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawaipad__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawaipad_card:hover .naprawaipad__name {
+    text-decoration: none;
+  }
+  .naprawaipad__img {
+    width: 100%;
+  }
+  .naprawaipad__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+/* iPhone 11 Pro Max */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .naprawaipad {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawaipad__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawaipad__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawaipad__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawaipad_card:hover .naprawaipad__name {
+    text-decoration: none;
+  }
+  .naprawaipad__img {
+    width: 100%;
+  }
+  .naprawaipad__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
 .naprawamacbook {
   margin: 100px 0px 0px 0px;
   text-align: center;
@@ -808,6 +1336,236 @@ input[type='submit'] {
 .naprawamacbook__name {
   margin: 32px 0px 0px 0px;
   color: #000000;
+}
+
+@media only screen and (max-width: 576px) {
+  .naprawamacbook {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawamacbook__card-wrapper {
+    max-width: 1200px;
+    margin: 82px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 120px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawamacbook__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawamacbook__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawamacbook_card:hover .naprawamacbook__name {
+    text-decoration: none;
+  }
+  .naprawamacbook__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .naprawamacbook {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawamacbook__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 33px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawamacbook__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawamacbook__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawamacbook_card:hover .naprawamacbook__name {
+    text-decoration: none;
+  }
+  .naprawamacbook__img {
+    width: 100%;
+  }
+  .naprawamacbook__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+/* iPhone 12 and iPhone 12 Pro */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .naprawamacbook {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawamacbook__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 33px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawamacbook__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawamacbook__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawamacbook_card:hover .naprawamacbook__name {
+    text-decoration: none;
+  }
+  .naprawamacbook__img {
+    width: 100%;
+  }
+  .naprawamacbook__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+/* iPhone 11 */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .naprawamacbook {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawamacbook__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 33px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawamacbook__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawamacbook__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawamacbook_card:hover .naprawamacbook__name {
+    text-decoration: none;
+  }
+  .naprawamacbook__img {
+    width: 100%;
+  }
+  .naprawamacbook__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
+}
+
+/* iPhone 11 Pro Max */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .naprawamacbook {
+    margin: 88px 0px 0px 0px;
+    text-align: center;
+  }
+  .naprawamacbook__card-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 42px auto 0px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 33px;
+    grid-row-gap: 82px;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .naprawamacbook__title {
+    margin: 0px 0px 12px 0px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .naprawamacbook__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #888888;
+  }
+  .naprawamacbook_card:hover .naprawamacbook__name {
+    text-decoration: none;
+  }
+  .naprawamacbook__img {
+    width: 100%;
+  }
+  .naprawamacbook__name {
+    margin: 22px 0px 0px 0px;
+    color: #000000;
+  }
 }
 
 .device_item {
@@ -1494,6 +2252,7 @@ input[type='submit'] {
           box-sizing: border-box;
   -webkit-border-radius: 13px;
           border-radius: 13px;
+  font-family: Manrope;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -1625,6 +2384,7 @@ input[type='submit'] {
           box-sizing: border-box;
   -webkit-border-radius: 13px;
           border-radius: 13px;
+  font-family: Manrope;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -1913,6 +2673,7 @@ input[type='submit'] {
             box-sizing: border-box;
     -webkit-border-radius: 13px;
             border-radius: 13px;
+    font-family: Manrope;
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
@@ -2031,6 +2792,7 @@ input[type='submit'] {
             box-sizing: border-box;
     -webkit-border-radius: 13px;
             border-radius: 13px;
+    font-family: Manrope;
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
@@ -2108,154 +2870,6 @@ input[type='submit'] {
     cursor: pointer;
     position: fixed;
     z-index: 1;
-  }
-}
-
-.naprawa__iphone {
-  background-color: #F4F4F4;
-}
-
-.naprawa__iphone-title {
-  display: block;
-  padding: 54px 0px 54px 0px;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 48px;
-}
-
-.naprawa__iphone-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-.naprawa__iphone-description {
-  padding: 0px 0px 294px 0px;
-  max-width: 431px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  color: #888888;
-}
-
-.naprawa__iphone-card {
-  margin: 0px 90px 0px 0px;
-}
-
-.naprawa__iphone-card ul li {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0px 0px 18px 0px;
-}
-
-.naprawa__iphone-card ul li:last-child {
-  margin: 0px 0px 82px 0px;
-}
-
-.naprawa__iphone-card ul li svg {
-  margin: 0px 12px 0px 0px;
-}
-
-.naprawa__iphone-card ul li a {
-  color: #157DFB;
-}
-
-.naprawa__iphone-card:last-child {
-  margin: 0px 0px 0px 0px;
-}
-
-.naprawa__iphone-image {
-  position: absolute;
-  height: 88%;
-  right: 0;
-  overflow: hidden;
-  bottom: 0;
-  text-align: right;
-}
-
-.naprawa__iphone-image img {
-  width: 88%;
-}
-
-.naprawa__iphone-padding_bottom {
-  padding: 50px 0px 12px 0px;
-}
-
-@media only screen and (max-width: 576px) {
-  .naprawa__iphone {
-    margin: 56px 0px 0px 0px;
-    background-color: #F4F4F4;
-  }
-  .naprawa__iphone-title {
-    padding: 32px 0px 46px 0px;
-    text-align: center;
-    display: block;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .naprawa__iphone-wrapper {
-    padding: 0px 0px 24px 0px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .naprawa__iphone-description {
-    padding: 0px 0px 294px 0px;
-    max-width: 90%;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
-    color: #888888;
-  }
-  .naprawa__iphone-card {
-    margin: 0px 0px 0px 0px;
-  }
-  .naprawa__iphone-card ul li {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0px 0px 18px 0px;
-  }
-  .naprawa__iphone-card ul li:last-child {
-    margin: 0px 0px 18px 0px;
-  }
-  .naprawa__iphone-card ul li svg {
-    margin: 0px 12px 0px 0px;
-  }
-  .naprawa__iphone-card ul li a {
-    color: #157DFB;
-  }
-  .naprawa__iphone-card:last-child {
-    margin: 0px 0px 0px 0px;
-  }
-  .naprawa__iphone-image {
-    display: none;
-  }
-  .naprawa__iphone-padding_bottom {
-    padding: 50px 0px 12px 0px;
   }
 }
 
@@ -2576,6 +3190,7 @@ input[type='submit'] {
     border: 1px solid #C4C4C4;
     -webkit-border-radius: 13px;
             border-radius: 13px;
+    font-family: Manrope;
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
@@ -2614,6 +3229,7 @@ input[type='submit'] {
             box-sizing: border-box;
     -webkit-border-radius: 13px;
             border-radius: 13px;
+    font-family: Manrope;
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
