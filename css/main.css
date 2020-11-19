@@ -665,6 +665,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawa__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -709,6 +712,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawa__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -756,6 +762,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawa__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -803,6 +812,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawa__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -850,6 +862,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawa__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -1091,6 +1106,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawaipad__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -1135,6 +1153,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawaipad__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -1182,6 +1203,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawaipad__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -1229,6 +1253,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawaipad__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -1276,6 +1303,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawaipad__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -1344,7 +1374,8 @@ input[type='submit'] {
     text-align: center;
   }
   .naprawamacbook__card-wrapper {
-    max-width: 1200px;
+    max-width: 90%;
+    width: 100%;
     margin: 82px auto 0px auto;
     display: -ms-grid;
     display: grid;
@@ -1366,6 +1397,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawamacbook__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -1410,6 +1444,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawamacbook__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -1457,6 +1494,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawamacbook__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -1504,6 +1544,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawamacbook__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -1551,6 +1594,9 @@ input[type='submit'] {
     line-height: 33px;
   }
   .naprawamacbook__subtitle {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -3119,14 +3165,18 @@ input[type='submit'] {
     margin: 0 auto;
   }
   .koszt__naprawy-title {
-    margin: 52px 0px 12px 0px;
+    max-width: 90%;
+    width: 100%;
+    margin: 52px auto 12px auto;
     text-align: center;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
   }
   .koszt__naprawy-subtitle {
-    margin: 0px 0px 82px 0px;
+    max-width: 90%;
+    width: 100%;
+    margin: 0px auto 42px auto;
     text-align: center;
     font-weight: 300;
     font-size: 16px;

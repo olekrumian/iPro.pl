@@ -186,7 +186,9 @@
     }
 
     &__naprawy-title {
-      margin: 52px 0px 12px 0px;
+      max-width: 90%;
+      width: 100%;
+      margin: 52px auto 12px auto;
       text-align: center;
       font-weight: normal;
       font-size: 24px;
@@ -194,7 +196,9 @@
     }
 
     &__naprawy-subtitle {
-      margin: 0px 0px 82px 0px;
+      max-width: 90%;
+      width: 100%;
+      margin: 0px auto 42px auto;
       text-align: center;
       font-weight: 300;
       font-size: 16px;
